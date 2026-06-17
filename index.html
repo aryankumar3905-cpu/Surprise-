@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Kamakhi!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 480px;
+            width: 100%;
+            min-height: 520px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            position: relative;
+        }
 
+        /* PAGE SYSTEM & SLIDE ANIMATION */
+        .page {
+            display: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .page.active {
+            display: block; 
+            animation: slideInRight 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1, h2 {
+            color: #4a00e0;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* Specific styling for Hinglish emotional highlights */
+        .highlight-text {
+            font-style: italic;
+            color: #2c3e50;
+            font-weight: 500;
+            background-color: #f7f9fa;
+            padding: 10px;
+            border-left: 3px solid #4a00e0;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .birthday-photo {
+            width: 100%;
+            max-height: 240px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 10px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* NAVIGATION BUTTONS */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #f0f0f0;
+            z-index: 10;
+        }
+
+        .btn {
+            background-color: #4a00e0;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            font-size: 0.9em;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn:hover:not(:disabled) {
+            background-color: #5f10f5;
+            transform: scale(1.03);
+        }
+
+        .btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .page-indicator {
+            font-size: 0.9em;
+            color: #777;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <!-- ================= PAGE 1 ================= -->
+        <div class="page active">
+            <h1>Happy Birthday, Dear Kamakhi! ❤️</h1>
+            <img src="best-friend.jpg" alt="Kamakhi" class="birthday-photo">
+            <p>Today is not just another date on the calendar; it is the day when someone truly special came into this world and unknowingly made the lives of so many people brighter, including mine.</p>
+            <p>As I sit down to write this message, I realize that finding the right words for you is much harder than I imagined because some people are so precious that no amount of words can fully express what they mean.</p>
+        </div>
+
+        <!-- ================= PAGE 2 ================= -->
+        <div class="page">
+            <h2>A Rare Soul ✨</h2>
+            <p>Kamakhi, you are one of those rare souls who make life feel a little lighter, a little happier, and a lot more meaningful. In a world where people come and go, you have been a constant source of warmth, kindness, and positivity. Your presence has a way of making ordinary moments memorable, and your smile has the power to brighten even the dullest days.</p>
+            <p>I often think about how fortunate I am to know someone like you. Friendship is not measured by the number of years people spend together but by the comfort, trust, and understanding they share. You have given me all of these without ever asking for anything in return.</p>
+        </div>
+
+        <!-- ================= PAGE 3 ================= -->
+        <div class="page">
+            <h2>Khaas Yaadein 🌟</h2>
+            <p class="highlight-text">"Tum sirf meri dost nahi ho, balki meri zindagi ke un khaas logon mein se ek ho jinke bina kai yaadein adhuri lagti hain."</p>
+            <p>Some friendships happen by chance, but they become priceless because of the effort, care, and affection that both people put into them. You have made this friendship incredibly valuable simply by being yourself.</p>
+            <p>What I admire most about you is your beautiful heart. The way you care for people, the way you understand emotions, the way you remain strong even during difficult times—these qualities make you truly extraordinary.</p>
+        </div>
+
+        <!-- ================= PAGE 4 ================= -->
+        <div class="page">
+            <h2>What You Deserve 💫</h2>
+            <p>On your birthday, I want you to know that you deserve every happiness this world has to offer. You deserve peaceful mornings, exciting adventures, genuine smiles, meaningful conversations, and countless moments that remind you how amazing you are. You deserve success in every dream you chase and courage whenever the path becomes challenging.</p>
+            <p>Life is a journey filled with unexpected twists and turns. Through all of it, I hope you never forget your worth. I hope you never underestimate the strength that lies within you. I hope you always remember that you are capable of overcoming far more than you realize.</p>
+        </div>
+
+        <!-- ================= PAGE 5 ================= -->
+        <div class="page">
+            <h2>Thank You For Everything ❤️</h2>
+            <p>Thank you for every laugh we have shared, every conversation that lasted longer than expected, every memory that still brings a smile to my face, and every moment when your friendship made life better. Thank you for being patient when I was difficult, understanding when I was quiet, and supportive when I needed encouragement.</p>
+            <p class="highlight-text">"Kabhi kabhi hum apni importance ko khud nahi samajh paate, lekin aaj main tumhe batana chahta hoon ki tum bahut special ho."</p>
+            <p>Your kindness leaves a lasting impact on people. Your determination inspires others. Your presence brings comfort. These are gifts that cannot be bought, copied, or replaced.</p>
+        </div>
+
+        <!-- ================= PAGE 6 ================= -->
+        <div class="page">
+            <h2>The Next Chapter 🌅</h2>
+            <p>As another year begins for you, I hope it brings opportunities that excite you, experiences that help you grow, and memories that stay with you forever. I hope this year surprises you in the best possible ways. I hope every challenge becomes a lesson, every effort brings rewards, and every dream takes you one step closer to where you want to be.</p>
+            <p>I also hope that whenever you feel tired, uncertain, or discouraged, you remember how far you have already come. Look at all the obstacles you have overcome, all the lessons you have learned, and all the people whose lives have become brighter because of you.</p>
+        </div>
+
+        <!-- ================= PAGE 7 ================= -->
+        <div class="page">
+            <h2>Only One Kamakhi 👑</h2>
+            <p>A true friend is someone who celebrates your victories without jealousy, supports you during your struggles without hesitation, and believes in you even when you doubt yourself. I want you to know that I will always cheer for your happiness, your success, and your dreams. No matter where life takes us, the respect, affection, and gratitude I have for you will always remain.</p>
+            <p>Today is your day, so take a moment to appreciate yourself. Celebrate the wonderful person you are. Celebrate your achievements, your growth, your resilience, and your beautiful soul. Be proud of everything that makes you unique because there is only one Kamakhi, and that alone makes you incredibly special.</p>
+        </div>
+
+        <!-- ================= PAGE 8 ================= -->
+        <div class="page">
+            <h2>Janamdin Ki Shubhkamnayein! 🍰✨</h2>
+            <p>May your heart always find reasons to smile. May your mind always find reasons to stay hopeful. May your journey always lead you toward happiness and fulfillment. May your dreams never lose their spark, and may your spirit never lose its strength.</p>
+            <p>Thank you for the memories, the trust, the laughter, and the friendship that I will always treasure. Once again, Happy Birthday, my dearest friend Kamakhi! 🎂❤️</p>
+            <p style="text-align: center; font-weight: bold; color: #4a00e0; margin-top: 15px;">
+                With lots of love, respect, gratitude, and best wishes,<br>Your Friend ❤️
+            </p>
+        </div>
+
+        <!-- NAVIGATION CONTROLS -->
+        <div class="nav-container">
+            <button class="btn" id="prevBtn" onclick="changePage(-1)" disabled>Previous</button>
+            <span class="page-indicator" id="pageNo">Page 1 of 8</span>
+            <button class="btn" id="nextBtn" onclick="changePage(1)">Next</button>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT FOR PAGE SWAPPING -->
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pageNo = document.getElementById('pageNo');
+
+        function changePage(direction) {
+            // Hide current page
+            pages[currentPage].classList.remove('active');
+            
+            // Move to next/prev index
+            currentPage += direction;
+            
+            // Show new page
+            pages[currentPage].classList.add('active');
+            
+            // Update the counter text
+            pageNo.innerText = `Page ${currentPage + 1} of ${pages.length}`;
+            
+            // Toggle button states
+            prevBtn.disabled = (currentPage === 0);
+            nextBtn.disabled = (currentPage === pages.length - 1);
+        }
+    </script>
+</body>
+</html>
